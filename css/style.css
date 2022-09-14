@@ -1,0 +1,49 @@
+main {
+    background-color: lightgreen;
+    height: 100vh;
+}
+
+header {
+    background-color: lightblue;
+}
+
+header > nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+}
+
+header > nav ul > li {
+    border: 3px inset blue;
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer {
+    background-color: pink;
+    position: sticky;
+    bottom: 0px;
+}
+
+p {
+    /*
+        if Courier New is available, use that,
+        else if Courier is available, use that,
+        else use monospace
+
+        Courier New needs quotes because it's multiple words
+    */
+    font-family: 'Courier New', Courier, monospace; 
+     
+    /* 
+         em = size of 'M' in parent
+        rem = size of 'M' in root (preferred)
+    */
+    font-size: 1.1rem;
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+}
